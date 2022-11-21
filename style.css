@@ -1,0 +1,45 @@
+img{
+    /* max-width: 100%;
+    height: auto; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.container{
+    width: 650px;
+    height: 590px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: rgb(187, 150, 81);
+    /* justify-content: space-evenly; */
+}
+
+.memoryCard{
+    background-color: yellow;
+    width: calc(20% - 10px);
+    height: calc(17% - 10px);
+    margin: 5px;
+    position: relative;
+    /* width: 100px;
+    height: 6rem; */
+    flex-grow: 1;
+}
+
+.flip {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform: rotateY(180deg);
+}
+
+.reversFlip{
+    transition: transform 1s;
+    transform: rotateY(0deg);
+}
+
+.secondImg{
+    display: none;
+}
+
